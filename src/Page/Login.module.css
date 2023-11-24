@@ -1,14 +1,32 @@
+.loginForm{
+    margin-top: 10px;
+    
+}
+
+.hlink{
+    text-decoration: none;
+}
+
+
 .home {
-    margin-left: 5%;
+    margin-left: 9%;
+    font-size: 20px;
+    margin-top: 5px;
+    color: #61ce70;
+    
 }
 
 .logo{
-    width: 18%;
-    margin: 2% 40%;
+    width: 120px;
+    margin: 0 110px;
+    text-align: center;
 }
 
 .form {
     padding: 1rem;
+    
+    
+
     
 }
 
@@ -18,51 +36,124 @@
 
 .control label {
     display: block;
-    font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-.control input, 
-.control textarea {
+ .emailInput{
     display: block;
     font: inherit;
     border-radius: 4px;
-    border: 1px solid rgb(0, 0, 0);
+    border: 1px solid #E8F0FE;
+    background-color: #E8F0FE;
     padding: 0.25rem;
     width: 100%;
 }
 
+.passwordInput{
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid #E8F0FE;
+    background-color: #E8F0FE;
+    padding: 0.25rem;
+    width: 84%;
+}
+
 .actions {
-    margin-top: 1rem;
-    text-align: right;
+    margin-top: 10px;
 }
 
 .actions button {
     cursor: pointer;
-    background-color: #064909;
+    background-color: #61ce70;
     color: white;
-    padding: 20px;
-    border: 1px solid #064909;
-    border-radius: 4px;
-    font-weight: bold;
+    padding: 8px 8px;
+    border: 1px solid #61ce70;
+    border-radius: 8px;
+    width: 100%;
 }
 
 .actions button:hover,
 .actions button:active {
-    background-color: #421e96;
-    border-color: #421e96;
+    padding: 7.5px 7px;
+}
+
+.actions2 {
+    margin-top: 10px;
+}
+
+.actions2 button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #61ce70;
+    padding: 8px 8px;
+    border: 1px solid #61ce70;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.actions2 button:hover,
+.actions2 button:active {
+    padding: 7.5px 7px;
 }
 
 .card {
-        background: transparent;
-        border-radius: 4px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        margin: 50px auto;
-        width: 60%;
+        margin: 30px auto;
         align-items: center;
+        width: 350px;
+        align-items: center;
+        justify-content: center;
     }
 
 label {
-    color: rgb(19, 74, 156);
-    font-size: 23px;
+    font-size: 18px;
+}
+
+.toggleIcon{
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 10px;
+    border: 1px solid #61ce70;
+    border-radius: 7px;
+    background-color: #61ce70;
+    color: white;
+    padding: 3px 7px;
+}
+
+h5{
+    font-size: 13px;
+    font-weight: normal;
+    padding: 7px 0;
+}
+
+.or{
+    text-align: center;
+    font-size: 22px;
+}
+
+.forgotten{
+    padding-left: 10px;
+    color: #61ce70;
+}
+
+@media only screen and (max-width: 425px) {
+    .card {
+        margin: 30px auto;
+        align-items: center;
+        width: 300px;
+
+    }
+
+    .footer{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .passwordInput{
+        font: inherit;
+        border-radius: 4px;
+        border: 1px solid #E8F0FE;
+        background-color: #E8F0FE;
+        padding: 0.25rem;
+        width: 82%;
+    }
 }

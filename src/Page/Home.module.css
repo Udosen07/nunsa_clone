@@ -1,618 +1,267 @@
-h6{
-    font-weight: normal;
-}
-
-.showColor{
-    color: white;
-}
-
-.bgImg{
-    position: relative;
-    margin-top: 6%;
-    background-position: center center;
-    justify-content: center;
-    display: flex;
-    overflow: hidden;
-    height: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://wallpaper.dog/large/5510782.jpg);
-}
-
-.showCase{
-    padding-top: 100px ;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    
-}
-
-
-.boxShadow:hover{
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-.imageWidth{
-    width: 100%;
-    height: 180px;
-    
-}
-
-.auto{
-    word-spacing: 5px;
-    letter-spacing: 3px;
-    font-weight: bolder;
-    font-size: 12px;
-    padding-bottom: 5px;
-    border-bottom: 5px solid #047DBA;
-}
-
-.showcaseText{
-    font-size: 35px;
-    font-weight: bolder;
-    padding-top: 25px;
-    padding-bottom: 10px;
-}
-
-.showLists{
-    font-size: 18px;
-    font-weight: bolder;
-}
-
-.showBtn{
-    padding: 9px;
-    font-size: 17px;
-    font-weight: bold;
-    
-}
-
-.showFooter{
-    font-size: 12px;
-    padding-top: 20px;
-    padding-bottom: 110px;
-    font-weight: bolder;
-
-}
-
-.latest{
+.par {
+    width: 48%;
     text-align: center;
-    font-size: 20px;
-    font-size: 30px;
-    color: black;
-    font-weight: 700px;
+    margin: 100px auto;
 }
 
-.mTop{
-    margin-top: 30px;
+.par h1{
+    font-weight: bolder;
+    font-size: 38px;
+}
+
+.pImg{
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+.parSpan{
+    color: #61CE70;
 }
 
 .gridContainer{
-    width: 83%;
-    margin: 60px auto;
-    margin-bottom: 100px;
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.gridText h2{
+    font-weight: 700;
+}
+
+.gridText p{
+    padding: 20px 0;
+    color: #8D7777;
+    font-size: 16px;
+}
+
+.gridText button{
+    background-color: #61CE70;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+}
+
+.blogHead{
+    padding-bottom: 0;
+}
+
+.line{
+    background-color: #61ce70;
+    height: 4px;
+    width: 12%;
+}
+
+.blogLine{
+    background-color: #61ce70;
+    height: 4px;
+    width: 6.5%;
+    margin-bottom: 10px;
+}
+
+.gridImg{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.imgCard{
+    height: 200px;
+}
+
+.cardWidth{
+    width: 100%;
+    border: 1px solid #f4f4f4;
+    box-shadow: 0 5px 15px rgba(0,0,0,.35);
+    
     
 }
 
-.gridBox{
-    border: 1px solid white;
-    padding: 20px 30px;
-    color:white;
-    position: relative;
-    background-position: center center;
-    justify-content: center;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://c4.wallpaperflare.com/wallpaper/209/445/132/sand-soil-dirt-hands-hd-black-sand-wallpaper-preview.jpg);
+.cardImg{
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 }
 
-.rowSpan{
-    grid-row: 1/ span 2;
+.cardImgHeight{
+    height: 200px;
 }
 
-.gridBtn{
-    background-color: white;
-    color: #047DBA;
-    border-color: #047DBA;
+.cardBody{
+    margin: 0 20px;
+    margin-top: 17px;
 }
 
-.gridBtn:hover{
-    background-color: transparent;
-    border-color: white;
+.blogBtn{
+    background-color: #61CE70;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+    margin-bottom: 10px;
 }
 
-.cardBox{
-    width: 83%;
-    margin: 10px auto;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    
+.blogBtn2{
+    background-color: #61CE70;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+    margin-bottom: 50px;
 }
-
-.cardBg{
-    background-color: #F4F4F4;
-}
-
-.cardText{
+.blogRead{
+    text-decoration: none;
+    color: #61CE70;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
     text-align: center;
-    padding: 30px;
-    color: #0A223F;
+}
+
+.blogRead i {
+    font-size: 9px;
+}
+
+.blogDate{
+    color: #8D7777;
+    font-size: 16px;
+    
+}
+
+.blogHead2{
+    margin-top: 70px;
+    
+}
+
+.blogHead2 h2{
     font-weight: bolder;
-    font-size: 35px;
-}
-
-.cardBtn{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 45%;
-    padding: 10px;
-    font-weight: 600;
     
 }
 
-.cardBtn:hover{
-    background-color: transparent;
-    color: #0A223F;
-    font-weight: 600;
-}
-
-.footer{
-    background-color: #0A223F;
-    color: white;
-    padding: 50px ;
-    padding-bottom: 30px;
-    margin-top: 20px;
-    
- 
-}
-
-.footerGrid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns:  1fr 3fr 2fr;
-    border-bottom: 1px solid #233953;
-}
-
-.footerList{
-    list-style: none;
-    padding: 30px 0;
-    
-}
-
-.footerLists{
-    padding: 8px 0;
-    font-weight: bold;
-}
-
-.footerColumn{
-    padding: 30px 20px;
-    color: #959FAC;
-    border-left: 1px solid #233953;
-    border-right: 1px solid #233953;
-}
-
-.footerColumnText{
-    padding-bottom: 7px;
-    
-}
-.footerImageDiv{
-    padding-left: 20px;
-}
-
-.footerImage{
-    width: 40%;
-    padding: 30px 10px;
-    
-    
-}
-
-.copyright{
-    color: #AFB6C0;
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.footerLastGrid{
+.excecutivesGrid{
     display: grid;
     gap: 20px;
-    grid-template-columns:  repeat(6, 1fr);
-    list-style: none;
-    color: #AFB6C0;
-    padding: 30px 20px;
-    font-weight: bold;
-    font-size: 16px;
-    
+    grid-template-columns: repeat(3, 1fr);
 }
 
-@media only screen and (max-width: 600px) {
-    .gridContainer{
-        width: 90%;
-        margin: 60px auto;
-        margin-bottom: 100px;
-        display: grid;
-       gap: 20px;
-       grid-template-columns: 1fr;
-        
-  }
-
-  .cardBox{
-    width: 90%;
-    margin: 10px auto;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    
+.blogLine2{
+    background-color: #61ce70;
+    height: 4px;
+    width: 20%;
+    margin-bottom: 10px;
 }
 
-.cardBtn{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 30%;
-    padding: 10px;
-    font-weight: 600;
-    
+.exeImg{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
 }
 
-.footer{
-    background-color: #0A223F;
-    color: white;
-    padding: 20px 20px ;
-    padding-bottom: 30px;
-    margin-top: 20px;
+
+
+.phoneButton{
+    background-color: #61ce70;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid  #61ce70;
+}
+
+.phoneButton a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    word-spacing: 2px;
+}
+
+.gridTitle{
     font-size: 20px;
- 
+    font-weight: bolder;
+    margin-top: 20px;
 }
 
-.footerGrid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns:  1fr;
-    border-bottom: 1px solid #233953;
+.gridName{
+    font-weight: 500;
+    font-size: 20px;
+    word-spacing: 3px;
 }
 
-.footerColumn{
-    padding: 30px 0px;
-    color: #959FAC;
-    border-top: 1px solid #233953;
-    border-bottom: 1px solid #233953;
-    border-left: 0 solid #233953;
-    border-right: 0 solid #233953;
-  
+.pText{
+    margin-left: 10px;
 }
 
-.footerLastGrid{
+.patronsGrid{
     display: grid;
     gap: 20px;
-    grid-template-columns:1fr;
-    padding-left: 0;
-    
+    grid-template-columns: repeat(2, 1fr);
 }
 
-
-.footerImageDiv{
-    padding-left: 0;
+.blogLine3{
+    background-color: #61ce70;
+    height: 4px;
+    width: 90px;
+    margin-bottom: 10px;
 }
 
-.footerImage{
-    width: 50%;
-    padding: 30px 5px;  
-}
+.underline{
+    text-decoration: underline;
+    color: #8D7777;
 }
 
-@media only screen and (min-width: 600px) {
-    .footerImage{
-        width: 30%;
-        padding: 30px 5px;  
-    }
-    
+@media only screen and (max-width: 750px) {
     .gridContainer{
-        width: 90%;
-        margin: 60px auto;
-        margin-bottom: 100px;
         display: grid;
        gap: 20px;
        grid-template-columns: 1fr;
         
   }
 
-  .cardBox{
-    width: 90%;
-    margin: 10px auto;
+  .excecutivesGrid{
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
-    
-}
+  }
 
-.cardBtn{
-    margin-top: 50px;
-    margin-bottom: 30px;
-    margin-left: 42%;
-    padding: 10px;
-    font-weight: 600;
-    
-}
 
-.footerGrid{
-    display: grid;
-    gap: 10px;
-    grid-template-columns:  1fr;
-    border-bottom: 1px solid #233953;
-}
-
-.footerColumn{
-    padding: 30px 20px;
-    color: #959FAC;
-    border-top: 1px solid #233953;
-    border-bottom: 1px solid #233953;
-    
-  
-}
-
-.footerLastGrid{
+  .patronsGrid{
     display: grid;
     gap: 20px;
-    grid-template-columns:1fr;
-    padding-left: 0;
-    
-}
+    grid-template-columns: 1fr;
+  }
 
-.footerColumn{
-    padding: 30px 0;
-    color: #959FAC;
-    border-left: 0px solid #233953;
-    border-right: 0px solid #233953;
-}
-
-.footerImageDiv{
-    padding-left: 0;
+  .exeImg{
+    width: 90%;
+    height: 680px;
+    object-fit: cover;
 }
 }
 
-@media only screen and (min-width: 920px) {
-    h6{
-        font-weight: normal;
-    }
+@media only screen and (min-width: 991px){
     
-    .showColor{
-        color: white;
-    }
+}
+
+@media only screen and (min-width: 768px){
     
-    .bgImg{
-        position: relative;
-        margin-top: 6%;
-        background-position: center center;
-        justify-content: center;
-        display: flex;
-        overflow: hidden;
-        height: 50%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://wallpaper.dog/large/5510782.jpg);
-    }
+}
+
+@media only screen and (min-width: 600px){
     
-    .showCase{
-        padding-top: 100px ;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        
-    }
-    
-    
-    .boxShadow:hover{
-        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    }
-    
-    .imageWidth{
-        width: 100%;
-        height: 180px;
-        
-    }
-    
-    .auto{
-        word-spacing: 5px;
-        letter-spacing: 3px;
-        font-weight: bolder;
-        font-size: 12px;
-        padding-bottom: 5px;
-        border-bottom: 5px solid #047DBA;
-    }
-    
-    .showcaseText{
-        font-size: 35px;
-        font-weight: bolder;
-        padding-top: 25px;
-        padding-bottom: 10px;
-    }
-    
-    .showLists{
-        font-size: 18px;
-        font-weight: bolder;
-    }
-    
-    .showBtn{
-        padding: 9px;
-        font-size: 17px;
-        font-weight: bold;
-        
-    }
-    
-    .showFooter{
-        font-size: 12px;
-        padding-top: 20px;
-        padding-bottom: 110px;
-        font-weight: bolder;
-    
-    }
-    
-    .latest{
+
+   
+}
+
+@media only screen and (max-width: 600px){
+   
+}
+
+@media only screen and (max-width: 320px){
+
+    .par {
+        width: 90%;
         text-align: center;
-        font-size: 20px;
-        font-size: 30px;
-        color: black;
-        font-weight: 700px;
+        margin: 100px auto;
     }
-    
-    .mTop{
-        margin-top: 30px;
-    }
-    
-    .gridContainer{
-        width: 83%;
-        margin: 60px auto;
-        margin-bottom: 100px;
-        display: grid;
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        
-    }
-    
-    .gridBox{
-        border: 1px solid white;
-        padding: 20px 30px;
-        color:white;
-        position: relative;
-        background-position: center center;
-        justify-content: center;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://c4.wallpaperflare.com/wallpaper/209/445/132/sand-soil-dirt-hands-hd-black-sand-wallpaper-preview.jpg);
-    }
-    
-    .rowSpan{
-        grid-row: 1/ span 2;
-    }
-    
-    .gridBtn{
-        background-color: white;
-        color: #047DBA;
-        border-color: #047DBA;
-    }
-    
-    .gridBtn:hover{
-        background-color: transparent;
-        border-color: white;
-    }
-    
-    .cardBox{
-        width: 83%;
-        margin: 10px auto;
-        display: grid;
-        gap: 30px;
-        grid-template-columns: repeat(3, 1fr);
-        
-    }
-    
-    .cardBg{
-        background-color: #F4F4F4;
-    }
-    
-    .cardText{
-        text-align: center;
-        padding: 30px;
-        color: #0A223F;
-        font-weight: bolder;
-        font-size: 35px;
-    }
-    
-    .cardBtn{
-        margin-top: 50px;
-        margin-bottom: 30px;
-        margin-left: 45%;
-        padding: 10px;
-        font-weight: 600;
-        
-    }
-    
-    .cardBtn:hover{
-        background-color: transparent;
-        color: #0A223F;
-        font-weight: 600;
-    }
-    
-    .footer{
-        background-color: #0A223F;
-        color: white;
-        padding: 50px ;
-        padding-bottom: 30px;
-        margin-top: 20px;
-        
-     
-    }
-    
-    .footerGrid{
-        display: grid;
-        gap: 10px;
-        grid-template-columns:  1fr 3fr 2fr;
-        border-bottom: 1px solid #233953;
-    }
-    
-    .footerList{
-        list-style: none;
-        padding: 30px 0;
-        
-    }
-    
-    .footerLists{
-        padding: 8px 0;
-        font-weight: bold;
-    }
-    
-    .footerColumn{
-        padding: 30px 20px;
-        color: #959FAC;
-        border-left: 1px solid #233953;
-        border-right: 1px solid #233953;
-    }
-    
-    .footerColumnText{
-        padding-bottom: 7px;
-        
-    }
-    .footerImageDiv{
-        padding-left: 20px;
-    }
-    
-    .footerImage{
-        width: 40%;
-        padding: 30px 10px;
-        
-        
-    }
-    
-    .copyright{
-        color: #AFB6C0;
-        margin-top: 10px;
-        font-size: 16px;
-        font-weight: bold;
-    }
-    
-    .footerLastGrid{
-        display: grid;
-        gap: 20px;
-        grid-template-columns:  repeat(6, 1fr);
-        list-style: none;
-        color: #AFB6C0;
-        padding: 30px 20px;
-        font-weight: bold;
-        font-size: 16px;
-        
-    }
-    
-}
 
-@media (max-width: 750px) {
-    .footerList{
-        display: flex;
-        flex-direction: row;
+    .par h1{
+        font-weight: bolder;
+        font-size: 26px;
     }
-    .liFlex{
-        flex: 1;
-        display: block;
-    }
+
 }

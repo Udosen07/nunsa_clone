@@ -1,0 +1,93 @@
+.bgSection{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 220px 100px;
+    
+}
+
+.bgSection h2{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.bgSection button{
+    margin-top: 10px;
+    background-color: #61CE70;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+    
+}
+
+@media only screen and (max-width: 991px){
+    .bgSection{
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 220px 100px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    .bgSection{
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 220px 100px;       
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .bgSection{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 220px 50px;
+        
+    }
+
+    .bgSection h2{
+        color: white;
+        font-size: 40px;
+        font-weight: bolder;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .bgSection{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 220px 10px;
+        
+    }
+
+    .bgSection h2{
+        color: white;
+        font-size: 35px;
+        font-weight: bolder;
+    }
+   
+}
+
+@media only screen and (max-width: 395px){
+    .bgSection{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 220px 5px;
+        
+    }
+
+    .bgSection h2{
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+    }
+   
+}
+

@@ -1,0 +1,84 @@
+.bgSection{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 220px 100px;
+    
+}
+
+.bgSection h2{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.bgSection button{
+    margin-top: 10px;
+    background-color: #61CE70;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+    
+}
+
+.line{
+    background-color: #61ce70;
+    height: 4px;
+    width: 95px;
+    margin-bottom: 25px;
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gridImg{
+        height: 90%;
+        object-fit: cover;
+        width: 90%;
+}
+
+.divs{
+    margin: 90px 0;
+}
+
+p{
+    color: #8D7777;
+}
+
+.read{
+    text-decoration: none;
+    color: #61CE70;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.read:hover{
+    text-decoration: none;
+    color: #61CE70;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.icon{
+    font-size: 12px;
+    text-align: center;
+}
+
+.blogBtn{
+    background-color: #61CE70;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 1px solid  #61CE70;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+    .grid{
+        display: grid;
+        gap: 20px;
+        grid-template-columns:  1fr;
+    }
+}

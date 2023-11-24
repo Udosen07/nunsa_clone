@@ -1,49 +1,114 @@
-import Container from "react-bootstrap/Container";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import classes from "./MainNav.module.css";
-import OffCanvas from '../components/OffCanvas';
-import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Offcanvas from "react-bootstrap/Offcanvas";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { useState} from 'react';
 
 
-function MainNav(props) {
-  const [show, setShow] = useState(false);
+const MainNav = () => {
+ 
+const [color, setNavbar] = useState(false);
 
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+const changeBackground = () => {
+  if(window.scrollY >= 100){
+    setNavbar(true)
+  }else{
+    setNavbar(false)
+  }
+}
 
-  
-  
+window.addEventListener("scroll", changeBackground);
+
   return (
-    <div className={classes.navBar}>
-    
-      <Container>
-        <img
-          src="https://www.investopedia.com/thmb/3_niAKi-hqxEto4981WaCes0ZYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/penfed-credit-union_3x1-4f974162685b43b3b4fa8cc5b00ddb30.png"
-          className={classes.navImage}
-          alt="Pedimage"
-        />
-
-        <div className={classes.navRightSection}>
+    <div id="top">
+      <nav  className={ color ? "navbar navbar-expand-lg fix navBg" : "navbar navbar-expand-lg fix transparent"}>
+        <div class="container-fluid">
           
-         <span><Button className={classes.navBtn}><Link to="/Login" className={classes.navBtnLink}>LOGIN</Link></Button></span> 
-
-          <span className={classes.navIcon}>
-            <FontAwesomeIcon
-              icon={faBars}
-              onClick={handleShow}
-              className={classes.bars}
-            />
-          </span>
+          <img
+            src="https://nunsaunical.com.ng/static/media/NunsalogoBg.1cc5a13a00b38d885974.png"
+            alt="nunsalogo"
+            className={classes.navLogo}
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              className={`navbar-nav ${classes.navList}`}
+            >
+              <li class="nav-item">
+              <div class={classes.navDropList}>
+                <NavLink
+                  to="/"
+                  className={`nav-link ${classes.link}`}
+                  aria-current="page"
+                >
+                  Home
+                </NavLink>
+                </div>
+              </li>
+              <li class="nav-item">
+              <div class={classes.navDropList}>
+                <NavLink
+                  to="/About"
+                  className={`nav-link ${classes.link}`}
+                  aria-current="page"
+                >
+                  About
+                </NavLink>
+                </div>
+              </li>
+              <li class="nav-item">
+              <div class={classes.navDropList}>
+                <NavLink
+                  to="/Excecutives"
+                  className={`nav-link ${classes.link}`}
+                  aria-current="page"
+                >
+                  Excecutives
+                </NavLink>
+                </div>
+              </li>
+              <li class="nav-item">
+              <div class={classes.navDropList}>
+                <NavLink
+                  to="/Blog"
+                  className={`nav-link ${classes.link}`}
+                  aria-current="page"
+                >
+                  Blog
+                </NavLink>
+                </div>
+              </li>
+              <li class="nav-item">
+              <div class={classes.navDropList}>
+                <NavLink
+                  to="/Login"
+                  className={`nav-link ${classes.link}`}
+                  aria-current="page"
+                >
+                  Login
+                </NavLink>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </Container>
+      </nav>
 
-      {show && <OffCanvas onCancel={handleClose}/>}
+      <div className={color ? "fix-bottom " : "fix-bottom fix-display"}>
+        <a href="#top"className={classes.fixlink}><i class="fa-solid fa-angle-up"></i></a>
+      
+      </div>
     </div>
   );
-}
+};
 
 export default MainNav;
